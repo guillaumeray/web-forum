@@ -1,0 +1,17 @@
+{
+    "name": "root/monsite",
+    "authors": [
+        {
+            "name": "guillaume",
+            "email": "grayes@lafourchette.com"
+        }
+    ],
+    "require": {},
+
+    "autoload": {
+        "psr-4":
+        {
+          "App\\": "app/"
+        }
+    }
+}
