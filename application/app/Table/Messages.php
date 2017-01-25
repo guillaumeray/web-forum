@@ -1,12 +1,15 @@
 <?php
 
 namespace App\Table;
+
 use App\Application;
 use App\Table\Room;
 use App\Exception\Table\TableException;
 use App\Exception\Table\Messages\MessagesException;
 
 class Messages extends Table {
+
+  public static $columns = "( `id` INT NOT NULL AUTO_INCREMENT , `room` INT NOT NULL , `login` VARCHAR NOT NULL , `message` MEDIUMTEXT NOT NULL , `date` DATETIME NOT NULL , PRIMARY KEY (`id`))";
 
   public static function get_messages_by_login($login)
   {
@@ -69,6 +72,5 @@ class Messages extends Table {
     $roomid = $roomobject[0]->id;
     return $roomid;
   }
-
 
 }

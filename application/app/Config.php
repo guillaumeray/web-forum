@@ -11,4 +11,10 @@ class Config {
       $this->settings = require dirname(__DIR__) . '/config/config.php';
     }
 
+    public function get_settings()
+    {
+        return $this->settings;
+    }
+
+
 }

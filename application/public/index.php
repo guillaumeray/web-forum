@@ -4,8 +4,10 @@ session_start();
 
 // autoload class
 require "../vendor/autoload.php";
+
 // use app for db
 use App\Application;
+
 
 if (isset($_SESSION['user']))
 {
@@ -55,8 +57,8 @@ if (isset($_SESSION['user']))
   }
 
   // connexion link
-  echo "<a href='../public/index.php?page=single&id=1'>voir article 1</a><br \>";
-  echo "<a href='../public/index.php?page=room'>liste des rooms</a><br \>";
+  echo "<a href='?page=single&id=1'>voir article 1</a><br \>";
+  echo "<a href='?page=room'>liste des rooms</a><br \>";
 }
 else
 {
@@ -92,8 +94,8 @@ else
 
   // no connexion link
   echo "Please login";
-  echo "<a href='../public/index.php?page=login'>login</a><br \>";
-  echo "<a href='../public/index.php?page=subscription'>s'inscrire</a><br \>";
+  echo "<a href='?page=login'>login</a><br \>";
+  echo "<a href='?page=subscription'>s'inscrire</a><br \>";
 }
 
-echo "<a href='../public/index.php'>retour index</a><br \>";
+echo "<a href=''>retour index</a><br \>";

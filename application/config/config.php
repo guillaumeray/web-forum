@@ -3,6 +3,6 @@
 return array(
   "db_user" => "root",
   "db_pass" => "root",
-  "db_host" => "localhost",
-  "db_name" => "monsite"
+  "db_host" => "db",
+  "db_name" => "webforum"
 );

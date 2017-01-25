@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Exception\Table\Room;
+namespace App\Exception\Table\Messages;
 
 use App\Exception\Table\TableException;
 

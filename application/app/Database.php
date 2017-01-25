@@ -30,6 +30,7 @@ class Database {
       return $this->pdo;
     }
 
+
     // query to ask for
     public function query($statement, $classname)
     {

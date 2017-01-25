@@ -7,6 +7,8 @@ use App\Exception\Table\User\LoginException;
 
 class Users extends Table {
 
+  public static $columns = "( `id` INT NOT NULL AUTO_INCREMENT , `login` VARCHAR NOT NULL , `password` VARCHAR NOT NULL , PRIMARY KEY (`id`))";
+
   public static function find_user_by_login($login)
   {
     $result = static::find_by_attribute('login', $login);
